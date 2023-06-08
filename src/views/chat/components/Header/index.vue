@@ -61,7 +61,10 @@ function toggleUsingContext() {
       >
         {{ currentChatHistory?.title ?? '' }}
       </h1>
-     
+      <div class="flex items-center space-x-2">
+       
+       
+      </div>
     </div>
   </header>
 </template>
