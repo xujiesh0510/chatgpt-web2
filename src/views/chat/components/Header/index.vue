@@ -7,14 +7,10 @@ interface Props {
   usingContext: boolean
 }
 
-interface Emit {
-  (ev: 'export'): void
-  (ev: 'toggleUsingContext'): void
-}
 
 defineProps<Props>()
 
-const emit = defineEmits<Emit>()
+
 
 const appStore = useAppStore()
 const chatStore = useChatStore()
