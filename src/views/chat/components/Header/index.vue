@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { computed, nextTick } from 'vue'
-import { HoverButton, SvgIcon } from '@/components/common'
+import { SvgIcon } from '@/components/common'
 import { useAppStore, useChatStore } from '@/store'
 
 interface Props {
@@ -31,14 +31,7 @@ function onScrollToTop() {
   if (scrollRef)
     nextTick(() => scrollRef.scrollTop = 0)
 }
-
-function handleExport() {
-  emit('export')
-}
-
-function toggleUsingContext() {
-  emit('toggleUsingContext')
-}
+ 
 </script>
 
 <template>
